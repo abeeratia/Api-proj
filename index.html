@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News API</title>
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow position-fixed z-3 start-0 top-0 w-100">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#">News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-country="us">United States</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-country="fr">France</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-country="it">Italy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-country="eg">Egypt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-country="jp">Japan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+   <div class="container d-flex align-items-start">
+    <aside class="bg-info-subtle">
+      <ul class="list-unstyled d-flex flex-column gap-2 p-2">
+        <li>
+          <a class="active" data-category="general">general</a>
+        </li>
+        <li>
+          <a data-category="sports">Sports</a>
+        </li>
+        <li>
+          <a data-category="business">business</a>
+        </li>
+        <li>
+          <a data-category="health">health</a>
+        </li>
+        <li>
+          <a data-category="science">science</a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="row p-4 g-4 align-items-stretch" id="newsContainer">
+
+    </div>
+   </div>
+
+  </main>
+  <script src="./Js/bootstrap.bundle.min.js"></script>
+  <script src="./Js/index.js"></script>
+</body>
+</html>
